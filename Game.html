@@ -10,7 +10,8 @@
     }
 </style>
 </head>
-<body onload="startGame()">
+<body onload="startGame()"></body>
+<body background="http://piq.codeus.net/static/media/userpics/piq_26403_400x400.png">
 <script>
 function playgame() {
     if (!myGameArea.interval) {
@@ -31,7 +32,7 @@ function startGame() {
     var x = 0, y = 12;
     myGameArea.start();
     myGamePiece = new component(100, 10, "red", myGameArea.canvas.width / 2 - 50, myGameArea.canvas.height - 20);
-    myball = new component(5, 5, "black", myGameArea.canvas.width / 2 - 2.5 - 100, 110);    
+    myball = new component(5, 5, "http://piq.codeus.net/static/media/userpics/piq_33378_400x400.png", myGameArea.canvas.width / 2 - 2.5 - 100, 110);    
     for (i = 0; i < 68; i++) {
         if ((x + 30) > myGameArea.canvas.width) {
             x = 0;
@@ -39,7 +40,7 @@ function startGame() {
         }
         if (x == 0) {x = 20; }
         x = x + 5;
-        myObstacles.push(new component(30, 10, "green", x, y));
+        myObstacles.push(new component(30, 10, "http://s3.amazonaws.com/spoonflower/public/design_thumbnails/0464/6962/r12x12_Lava_Block_Design_Two_shop_thumb.png", x, y));
         x = x + 30;
     }
     myGameArea.setsize();
