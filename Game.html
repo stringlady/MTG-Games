@@ -31,7 +31,7 @@ var myObstacles = [];
 function startGame() {
     var x = 0, y = 12;
     myGameArea.start();
-    myGamePiece = new component(100, 10, "red", myGameArea.canvas.width / 2 - 50, myGameArea.canvas.height - 20);
+    myGamePiece = new component(100, 10, "orange", myGameArea.canvas.width / 2 - 50, myGameArea.canvas.height - 20);
     myball = new component(5, 5, "white", myGameArea.canvas.width / 2 - 2.5 - 100, 110);    
     for (i = 0; i < 68; i++) {
         if ((x + 30) > myGameArea.canvas.width) {
