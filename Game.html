@@ -58,19 +58,9 @@
     }
 </style>
 </head>
-<body onload="startGame()"></body>
-<body background="http://piq.codeus.net/static/media/userpics/piq_26403_400x400.png">
+<body onload="startGame()">
 <script>
-function playgame() {
-    if (!myGameArea.interval) {
-        myGameArea.interval = setInterval(updateGameArea, 20);
-    } else {
-        myGameArea.pause = false;
-    }
-}
-function pausegame() {
-    myGameArea.pause = true;
-}
+
 
 var myball;
 var myGamePiece;
@@ -306,7 +296,6 @@ function updateGameArea() {
 }
 </script>
 <br>
-<button onclick="playgame()">Play Game</button>
 <a href="http://stringlady.github.io/MTG-Games/JSG.html" class='button'>New Level</a>
 </body>
 </html>
