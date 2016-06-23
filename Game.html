@@ -237,7 +237,7 @@ function component(width, height, color, x, y) {
 var lastspeedX = 0;
 var ss = 0;
 function updateGameArea() {
-    var x, y, speed = 2;
+    var x, y, speed = 9;
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myball.crashWith(myObstacles[i])) {
             if (myball.crashLeft(myObstacles[i]) || myball.crashRight(myObstacles[i])) {
